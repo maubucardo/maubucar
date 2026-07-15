@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://maubucar.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://maubucar.com/square.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://maubucar.com/cash-app.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://maubucar.com/credit-one.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://maubucar.com/cepheid.html</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
