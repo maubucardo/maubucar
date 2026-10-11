@@ -453,7 +453,9 @@ header {
   opacity: 0;
   transform: scale(1.02);
   animation: heroImageIn 1s cubic-bezier(0.77,0,0.19,1) 0.1s forwards;
+  animation-play-state: paused;
 }
+.hero-full-img.is-loaded { animation-play-state: running; }
 
 
 @keyframes fadeUp {

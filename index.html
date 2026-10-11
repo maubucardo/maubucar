@@ -28,6 +28,7 @@
       --pill-red: #e84327;
       --pill-yellow: #f5b800;
       --pill-green: #1aaa6b;
+      --pill-cyan: #00c2ff;
       --surface: #ffffff;
       --surface-muted: #eceef5;
       --surface-muted-hover: #dddfe8;
@@ -628,6 +629,7 @@
     .pill-red:hover    { background: #a82b18; }
     .pill-yellow:hover { background: #b88700; }
     .pill-green:hover  { background: #0d7045; }
+    .pill-cyan:hover   { background: #0088b3; }
 
     .pill-disabled {
       cursor: default;
@@ -648,6 +650,7 @@
     .pill-red    { background: var(--pill-red); }
     .pill-yellow { background: var(--pill-yellow); }
     .pill-green  { background: var(--pill-green); }
+    .pill-cyan   { background: var(--pill-cyan); }
 
     /* ── ABOUT (hidden section linked) ── */
     #about {
@@ -847,25 +850,29 @@
   </div>
 
   <section class="hero">
-<p class="hero-statement"><span id="product-designer-label">Product designer</span> with 8+ years of experience designing products for <svg class="inline-icon" width="0.8em" height="0.8em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 15.5C13.8195 15.5 15.536 15.9757 16.8262 16.9023C18.1366 17.8436 19 19.2545 19 21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21C5 19.2545 5.86339 17.8436 7.17383 16.9023C8.46398 15.9757 10.1805 15.5 12 15.5ZM12 17.5C10.5059 17.5 9.22223 17.8934 8.34082 18.5264C7.78139 18.9282 7.38432 19.424 7.17383 20H16.8262C16.6157 19.424 16.2186 18.9282 15.6592 18.5264C14.7778 17.8934 13.4941 17.5 12 17.5Z" fill="currentColor"/><path d="M7 10.5C5.12966 10.5 3.76859 11.4134 3.24121 12.5H7V14.5H2C1.44772 14.5 1 14.0523 1 13.5C1 10.5419 3.90606 8.5 7 8.5V10.5Z" fill="currentColor"/><path d="M17 8.5C20.0939 8.5 23 10.5419 23 13.5C23 14.0523 22.5523 14.5 22 14.5H17V12.5H20.7588C20.2314 11.4134 18.8703 10.5 17 10.5V8.5Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 8C13.6569 8 15 9.34315 15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8ZM12 10C11.4477 10 11 10.4477 11 11C11 11.5523 11.4477 12 12 12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 10 12 10Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M7 1C8.65685 1 10 2.34315 10 4C10 5.65685 8.65685 7 7 7C5.34315 7 4 5.65685 4 4C4 2.34315 5.34315 1 7 1ZM7 3C6.44772 3 6 3.44772 6 4C6 4.55228 6.44772 5 7 5C7.55228 5 8 4.55228 8 4C8 3.44772 7.55228 3 7 3Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1C18.6569 1 20 2.34315 20 4C20 5.65685 18.6569 7 17 7C15.3431 7 14 5.65685 14 4C14 2.34315 15.3431 1 17 1ZM17 3C16.4477 3 16 3.44772 16 4C16 4.55228 16.4477 5 17 5C17.5523 5 18 4.55228 18 4C18 3.44772 17.5523 3 17 3Z" fill="currentColor"/></svg> people and the <svg class="inline-icon" width="0.8em" height="0.8em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.9834 3.00781C19.2656 3.04257 19.5223 3.19608 19.6855 3.43359L22.3242 7.27344C22.4387 7.44006 22.5 7.63767 22.5 7.83984C22.5 9.17513 21.6476 10.2389 20.5 10.7197V20C20.5 20.5523 20.0523 21 19.5 21H4.5C3.94772 21 3.5 20.5523 3.5 20V10.7197C2.35241 10.2389 1.5 9.17513 1.5 7.83984C1.50003 7.63767 1.56128 7.44006 1.67578 7.27344L4.31445 3.43359L4.39062 3.33691C4.57904 3.12426 4.85069 3.00006 5.13867 3H18.8613L18.9834 3.00781ZM16.75 10.085C16.1257 10.6589 15.2725 11 14.375 11C13.4775 11 12.6243 10.6589 12 10.085C11.3757 10.6589 10.5225 11 9.625 11C8.72751 11 7.87435 10.6589 7.25 10.085C6.77291 10.5235 6.162 10.825 5.5 10.9434V19H18.5V10.9434C17.838 10.825 17.2271 10.5235 16.75 10.085ZM3.53711 8.09473C3.6689 8.56433 4.15418 9 4.875 9C5.7258 9 6.25 8.39331 6.25 7.83984C6.25008 7.28763 6.69777 6.83984 7.25 6.83984C7.80223 6.83984 8.24992 7.28763 8.25 7.83984C8.25 8.39331 8.7742 9 9.625 9C10.4758 9 11 8.39331 11 7.83984C11.0001 7.28763 11.4478 6.83984 12 6.83984C12.5522 6.83984 12.9999 7.28763 13 7.83984C13 8.39331 13.5242 9 14.375 9C15.2258 9 15.75 8.39331 15.75 7.83984C15.7501 7.28763 16.1978 6.83984 16.75 6.83984C17.3022 6.83984 17.7499 7.28763 17.75 7.83984C17.75 8.39331 18.2742 9 19.125 9C19.8457 9 20.33 8.56423 20.4619 8.09473L18.335 5H5.66504L3.53711 8.09473Z" fill="currentColor"/></svg> businesses that depend on them. <span class="hero-location">From <svg class="inline-icon" width="0.8em" height="0.8em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22L11.4854 21.9873C6.20167 21.7195 2 17.3502 2 12C2 6.47715 6.47715 2 12 2ZM9.02637 13C9.12244 14.8497 9.48406 16.606 10.085 17.958C10.8238 19.6203 11.5975 20 12 20C12.4025 20 13.1762 19.6203 13.915 17.958C14.5159 16.606 14.8776 14.8497 14.9736 13H9.02637ZM4.06445 13C4.40259 15.7107 6.09595 18 8.44531 19.168C8.38047 19.0382 8.31789 18.9057 8.25781 18.7705C7.52261 17.1163 7.12178 15.0684 7.02441 13H4.06445ZM16.9756 13C16.8782 15.0684 16.4774 17.1163 15.7422 18.7705C15.6821 18.9058 15.6186 19.0381 15.5537 19.168C17.9035 18.0001 19.5974 15.711 19.9355 13H16.9756ZM15.5537 4.83105C15.6188 4.96117 15.6819 5.09393 15.7422 5.22949C16.4774 6.8837 16.8782 8.93158 16.9756 11H19.9355C19.5974 8.28881 17.9037 5.99884 15.5537 4.83105ZM12 4C11.5975 4 10.8238 4.3797 10.085 6.04199C9.48406 7.39403 9.12244 9.15027 9.02637 11H14.9736C14.8776 9.15027 14.5159 7.39403 13.915 6.04199C13.1762 4.3797 12.4025 4 12 4ZM8.44531 4.83105C6.09575 5.99896 4.40261 8.28911 4.06445 11H7.02441C7.12178 8.93158 7.52261 6.8837 8.25781 5.22949C8.31801 5.09407 8.38033 4.96105 8.44531 4.83105Z" fill="currentColor"/></svg> Mexico City, based in <svg class="inline-icon" width="0.8em" height="0.8em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 7.5C13.1046 7.5 14 8.39543 14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8955 11.5 10 10.6045 10 9.5C10 8.39545 10.8955 7.50003 12 7.5Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C14.3814 1 16.6683 1.92987 18.3574 3.58984C20.0471 5.25041 21 7.50627 21 9.8623C20.9999 13.3214 18.765 16.4752 16.7314 18.6562C15.6929 19.7702 14.6573 20.6821 13.8828 21.3154C13.4949 21.6327 13.1707 21.8819 12.9414 22.0527C12.8267 22.1382 12.7353 22.2046 12.6719 22.25C12.6403 22.2726 12.6151 22.2895 12.5977 22.3018C12.5889 22.3079 12.5821 22.3129 12.5771 22.3164C12.5748 22.318 12.5713 22.3203 12.5713 22.3203L12.5693 22.3223L12 21.5L12.5684 22.3232C12.2264 22.5593 11.7736 22.5593 11.4316 22.3232L11.4287 22.3203C11.4287 22.3203 11.4252 22.318 11.4229 22.3164C11.4179 22.3129 11.4111 22.3079 11.4023 22.3018C11.3849 22.2895 11.3597 22.2726 11.3281 22.25C11.2647 22.2046 11.1733 22.1382 11.0586 22.0527C10.8293 21.8819 10.5051 21.6327 10.1172 21.3154C9.34273 20.6821 8.30714 19.7702 7.26855 18.6562C5.23505 16.4752 3.0001 13.3214 3 9.8623C3 7.50627 3.95288 5.25041 5.64258 3.58984C7.33169 1.92987 9.61862 1 12 1ZM12 3C10.138 3 8.35541 3.72683 7.04395 5.01562C5.73306 6.30391 5 8.04804 5 9.8623C5.0001 12.5179 6.76509 15.1829 8.73145 17.292C9.69282 18.3231 10.6573 19.1743 11.3828 19.7676C11.6166 19.9587 11.8258 20.1211 12 20.2549C12.1742 20.1211 12.3834 19.9587 12.6172 19.7676C13.3427 19.1743 14.3072 18.3231 15.2686 17.292C17.2349 15.1829 18.9999 12.5179 19 9.8623C19 8.04804 18.2669 6.30391 16.9561 5.01562C15.6446 3.72683 13.862 3 12 3Z" fill="currentColor"/></svg> San Francisco.</span></p>
+<p class="hero-statement"><span id="product-designer-label">Product designer</span> with 8+ years of experience crafting digital products. Currently designing <svg class="inline-icon" width="0.8em" height="0.8em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23 8C23.5523 8 24 8.44772 24 9V20C24 20.2651 23.8945 20.5195 23.707 20.707C23.5195 20.8945 23.2652 21 23 21H5C4.44778 21 4.0001 20.5522 4 20V9C4 8.73478 4.10543 8.4805 4.29297 8.29297C4.4805 8.10543 4.73478 8 5 8H23ZM6 19H7.23047C6.96535 18.5422 6.52484 18.2007 6 18.0654V19ZM9.46777 10C9.24209 11.8092 7.80923 13.2421 6 13.4678V16.0312C7.63913 16.2357 8.97033 17.4315 9.37402 19H18.5322C18.7579 17.1907 20.1907 15.7569 22 15.5312V12.9678C20.3609 12.7633 19.0297 11.5684 18.626 10H9.46777ZM22 17.5654C21.2977 17.7464 20.7464 18.2977 20.5654 19H22V17.5654ZM6 11.4336C6.70222 11.2525 7.2536 10.7023 7.43457 10H6V11.4336ZM20.7695 10C21.0346 10.4577 21.4753 10.7983 22 10.9336V10H20.7695Z" fill="currentColor"/><path d="M19 6H2V16H0V5C2.30417e-08 4.73478 0.105432 4.48051 0.292969 4.29297C0.480505 4.10543 0.734784 4 1 4H19V6Z" fill="currentColor"/></svg> <a href="https://quickbooks.intuit.com/" target="_blank" rel="noopener">@QuickBooks</a>. <span class="hero-location">From <svg class="inline-icon" width="0.8em" height="0.8em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22L11.4854 21.9873C6.20167 21.7195 2 17.3502 2 12C2 6.47715 6.47715 2 12 2ZM9.02637 13C9.12244 14.8497 9.48406 16.606 10.085 17.958C10.8238 19.6203 11.5975 20 12 20C12.4025 20 13.1762 19.6203 13.915 17.958C14.5159 16.606 14.8776 14.8497 14.9736 13H9.02637ZM4.06445 13C4.40259 15.7107 6.09595 18 8.44531 19.168C8.38047 19.0382 8.31789 18.9057 8.25781 18.7705C7.52261 17.1163 7.12178 15.0684 7.02441 13H4.06445ZM16.9756 13C16.8782 15.0684 16.4774 17.1163 15.7422 18.7705C15.6821 18.9058 15.6186 19.0381 15.5537 19.168C17.9035 18.0001 19.5974 15.711 19.9355 13H16.9756ZM15.5537 4.83105C15.6188 4.96117 15.6819 5.09393 15.7422 5.22949C16.4774 6.8837 16.8782 8.93158 16.9756 11H19.9355C19.5974 8.28881 17.9037 5.99884 15.5537 4.83105ZM12 4C11.5975 4 10.8238 4.3797 10.085 6.04199C9.48406 7.39403 9.12244 9.15027 9.02637 11H14.9736C14.8776 9.15027 14.5159 7.39403 13.915 6.04199C13.1762 4.3797 12.4025 4 12 4ZM8.44531 4.83105C6.09575 5.99896 4.40261 8.28911 4.06445 11H7.02441C7.12178 8.93158 7.52261 6.8837 8.25781 5.22949C8.31801 5.09407 8.38033 4.96105 8.44531 4.83105Z" fill="currentColor"/></svg> Mexico City, based in <svg class="inline-icon" width="0.8em" height="0.8em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 7.5C13.1046 7.5 14 8.39543 14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8955 11.5 10 10.6045 10 9.5C10 8.39545 10.8955 7.50003 12 7.5Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C14.3814 1 16.6683 1.92987 18.3574 3.58984C20.0471 5.25041 21 7.50627 21 9.8623C20.9999 13.3214 18.765 16.4752 16.7314 18.6562C15.6929 19.7702 14.6573 20.6821 13.8828 21.3154C13.4949 21.6327 13.1707 21.8819 12.9414 22.0527C12.8267 22.1382 12.7353 22.2046 12.6719 22.25C12.6403 22.2726 12.6151 22.2895 12.5977 22.3018C12.5889 22.3079 12.5821 22.3129 12.5771 22.3164C12.5748 22.318 12.5713 22.3203 12.5713 22.3203L12.5693 22.3223L12 21.5L12.5684 22.3232C12.2264 22.5593 11.7736 22.5593 11.4316 22.3232L11.4287 22.3203C11.4287 22.3203 11.4252 22.318 11.4229 22.3164C11.4179 22.3129 11.4111 22.3079 11.4023 22.3018C11.3849 22.2895 11.3597 22.2726 11.3281 22.25C11.2647 22.2046 11.1733 22.1382 11.0586 22.0527C10.8293 21.8819 10.5051 21.6327 10.1172 21.3154C9.34273 20.6821 8.30714 19.7702 7.26855 18.6562C5.23505 16.4752 3.0001 13.3214 3 9.8623C3 7.50627 3.95288 5.25041 5.64258 3.58984C7.33169 1.92987 9.61862 1 12 1ZM12 3C10.138 3 8.35541 3.72683 7.04395 5.01562C5.73306 6.30391 5 8.04804 5 9.8623C5.0001 12.5179 6.76509 15.1829 8.73145 17.292C9.69282 18.3231 10.6573 19.1743 11.3828 19.7676C11.6166 19.9587 11.8258 20.1211 12 20.2549C12.1742 20.1211 12.3834 19.9587 12.6172 19.7676C13.3427 19.1743 14.3072 18.3231 15.2686 17.292C17.2349 15.1829 18.9999 12.5179 19 9.8623C19 8.04804 18.2669 6.30391 16.9561 5.01562C15.6446 3.72683 13.862 3 12 3Z" fill="currentColor"/></svg> San Francisco.</span></p>
   </section>
 
   <section class="work-section">
     <div class="marquee-fade">
     <div class="marquee-track">
       <a href="square.html" class="pill pill-blue"><span>Square</span></a>
+      <a href="https://www.intuit.com/" class="pill pill-cyan" target="_blank" rel="noopener" data-cursor-label="View website"><span>Intuit</span></a>
       <a href="cash-app.html" class="pill pill-green"><span>Cash App</span></a>
       <a href="credit-one.html" class="pill pill-yellow"><span>Credit One</span></a>
       <a href="state-farm.html" class="pill pill-red"><span>State Farm</span></a>
       <a href="square.html" class="pill pill-blue"><span>Square</span></a>
+      <a href="https://www.intuit.com/" class="pill pill-cyan" target="_blank" rel="noopener" data-cursor-label="View website"><span>Intuit</span></a>
       <a href="cash-app.html" class="pill pill-green"><span>Cash App</span></a>
       <a href="credit-one.html" class="pill pill-yellow"><span>Credit One</span></a>
       <a href="state-farm.html" class="pill pill-red"><span>State Farm</span></a>
       <a href="square.html" class="pill pill-blue"><span>Square</span></a>
+      <a href="https://www.intuit.com/" class="pill pill-cyan" target="_blank" rel="noopener" data-cursor-label="View website"><span>Intuit</span></a>
       <a href="cash-app.html" class="pill pill-green"><span>Cash App</span></a>
       <a href="credit-one.html" class="pill pill-yellow"><span>Credit One</span></a>
       <a href="state-farm.html" class="pill pill-red"><span>State Farm</span></a>
       <a href="square.html" class="pill pill-blue"><span>Square</span></a>
+      <a href="https://www.intuit.com/" class="pill pill-cyan" target="_blank" rel="noopener" data-cursor-label="View website"><span>Intuit</span></a>
       <a href="cash-app.html" class="pill pill-green"><span>Cash App</span></a>
       <a href="credit-one.html" class="pill pill-yellow"><span>Credit One</span></a>
       <a href="state-farm.html" class="pill pill-red"><span>State Farm</span></a>
@@ -952,7 +959,7 @@
       if (e.target.closest(CLICKABLE)) cursorDot.classList.remove('expanded');
     });
 
-    // Pill hover → hide dot, show "View case study" label
+    // Pill hover → hide dot, show "View case study" (or data-cursor-label) label
     let cursorX = 0, cursorY = 0;
     let cursorRafId = null;
     let cursorCurrentX = 0, cursorCurrentY = 0;
@@ -972,6 +979,7 @@
         cursorCurrentX = e.clientX; cursorCurrentY = e.clientY;
         customCursor.style.left = cursorCurrentX + 'px';
         customCursor.style.top = cursorCurrentY + 'px';
+        customCursor.textContent = pill.dataset.cursorLabel || 'View case study';
         customCursor.classList.add('visible');
         cursorDot.classList.add('hidden');
         if (!cursorRafId) cursorRafId = requestAnimationFrame(cursorLoop);
@@ -1200,7 +1208,7 @@
       heroP.querySelectorAll('.inline-icon').forEach(icon => {
         const slot = document.createElement('span');
         slot.className = 'icon-slot';
-        slot.style.cssText = 'display:inline-block;width:0;overflow:hidden;vertical-align:middle;position:relative;top:-0.05em;transition:width 0.35s cubic-bezier(0.34,1.56,0.64,1)';
+        slot.style.cssText = 'display:inline-block;width:0;overflow:hidden;vertical-align:middle;position:relative;top:-0.25em;transition:width 0.35s cubic-bezier(0.34,1.56,0.64,1)';
         icon.style.top = '0';
         icon.parentNode.insertBefore(slot, icon);
         slot.appendChild(icon);
@@ -1315,7 +1323,7 @@
 
       <div class="mind-section">
         <div id="headshot-wrap" style="width:140px;height:140px;border-radius:50%;overflow:hidden;margin:0 auto 16px;cursor:none;">
-          <img src="images/headshot.png" alt="Mau" id="headshot-img" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.7s cubic-bezier(0.77,0,0.19,1);">
+          <img src="images/headshot.webp" alt="Mau" id="headshot-img" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.7s cubic-bezier(0.77,0,0.19,1);">
         </div>
         <p style="font-family:'Fraunces',serif;font-size:15px;line-height:1.7;color:var(--text);margin-bottom:12px;">I have a background in advertising and marketing, and found my way into product design through motion graphics. These days, I still occasionally <a href="https://www.instagram.com/mauricio.bucardo/" target="_blank" style="color:inherit;text-underline-offset:3px;">animate things just for fun</a>.</p>
         <p style="font-family:'Fraunces',serif;font-size:15px;line-height:1.7;color:var(--text);margin-bottom:12px;">Outside of work, you'll usually find me <a href="https://www.instagram.com/maubucardo/" target="_blank" style="color:inherit;text-underline-offset:3px;">traveling</a>, hiking, playing tennis, or somewhere at a <a href="https://soundcloud.com/you/sets" target="_blank" style="color:inherit;text-underline-offset:3px;">music festival</a>. I'm also an avid gamer, and a lot of my inspiration comes from experiences that spark wonder and delight.</p>
@@ -1350,7 +1358,7 @@
   </div><!-- end blade -->
 
   <footer>
-    <span>Built with Claude</span>
+    <span>&copy; 2026 MB. All rights reserved.</span>
     <div class="footer-right">
       <button id="dark-toggle" onclick="toggleDark()" class="footer-toggle" aria-label="Toggle dark mode" onmouseover="this.style.opacity=.6" onmouseout="this.style.opacity=1">
         <span id="theme-icon-wrap">

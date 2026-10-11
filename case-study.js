@@ -1,4 +1,19 @@
 (function () {
+  /* ── IMAGE LOAD FADE ── */
+  // Run cb once img has loaded and decoded (or failed), so nothing fades in half-painted
+  function whenImgReady(img, cb) {
+    if (!img) { cb(); return; }
+    var done = false;
+    function go() {
+      if (done) return; done = true;
+      if (img.decode) img.decode().then(cb, cb); else cb();
+    }
+    if (img.complete && img.naturalWidth) go();
+    else { img.addEventListener('load', go); img.addEventListener('error', function () { done = true; cb(); }); }
+  }
+  var heroImg = document.querySelector('.hero-full-img');
+  if (heroImg) whenImgReady(heroImg, function () { heroImg.classList.add('is-loaded'); });
+
   /* ── DARK MODE ── */
   window.toggleDark = function () {
     const isDark = document.documentElement.dataset.theme === 'dark';
@@ -333,7 +348,8 @@
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) return;
           galleryObserver.unobserve(entry.target);
-          entry.target.classList.add('visible');
+          var item = entry.target;
+          whenImgReady(item.querySelector('img'), function () { item.classList.add('visible'); });
         });
       }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
       galleryItems.forEach(function (el, i) {
